@@ -1,13 +1,16 @@
 <div class="home-callout text-center container-fluid">
-    <h1>Welcome To DevMatch</h1>
-    <h3>A membership site where entrepreneurs can meet developers.</h3>
+    <h1>Welcome To Membership Site</h1>
+    <h3>
+        <p>A fully functional membership site with user profiles and ecommerce built on rails where you can sign up and pay with Stripe.</p> 
+        <p>I built this as part of my rails training. </p>
+    </h3>
 </div>
 <div class="container home-signup-links">
     <div class='row'>
         <div class='col-md-6'>
             <div class='well'>
                 <h2 class='text-center'>Basic Membership</h2>
-                <h4>Sign up for free and get basic access to the community.</h4>
+                <h4>Sign up for free and get basic access.</h4>
                 <br/>
                 <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
             </div>
