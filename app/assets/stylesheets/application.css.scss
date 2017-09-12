@@ -66,8 +66,18 @@ h1, h2, h3 {
     }
 }
 
-.alert-notice {
-    display: none;
+.flash-container {
+    position: absolute;
+    width: 100%;
+}
+
+.alert-notice, .alert-alert {
+    color: rgba(255, 16, 0, 0.65);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0001);
+    border-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: -14px;
 }
 
 .home-signup-links {
