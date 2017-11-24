@@ -3,7 +3,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     
     #Extend default devise gem behaviour so that users
     # signing up with the pro account 
-    #save with a special stripe subscription function 
+    # save with a special stripe subscription function 
     # otherwise devise signs up user as usual 
     
     def create
@@ -23,8 +23,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
             unless (params[:plan] == '1' || params[:plan] == '2')
                 flash[:notice] = 'Please select a membership plan to sign up.'
                 redirect_to root_url
+            end
         end
-    end
     
 end
 
