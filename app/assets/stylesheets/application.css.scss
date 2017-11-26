@@ -29,8 +29,8 @@ h1, h2, h3 {
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     color: white;
 }
 
@@ -67,14 +67,16 @@ h1, h2, h3 {
 }
 
 .flash-container {
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
+    background-color: transparent;
 }
 
 .alert-notice, .alert-alert {
-    color: rgba(255, 16, 0, 0.65);
+    color: black;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.0001);
+    background-color: rgba(0, 0, 0, 0.5);
     border-color: whitesmoke;
     border-radius: 5px;
     margin-top: -14px;
@@ -82,4 +84,11 @@ h1, h2, h3 {
 
 .home-signup-links {
     margin-top: 30px;
+}
+
+.footy {
+    background-color: black;
+}
+.footy p {
+    padding-right: 25px;
 }
